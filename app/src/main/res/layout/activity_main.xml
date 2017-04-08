@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.digzdigital.gascontrol.MainActivity">
+
+    <TextView
+        android:id="@+id/monitorStateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Monitoring off"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"/>
+
+
+    <ToggleButton
+        android:id="@+id/toggleMonitorButton"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_lamp_on_off"
+        android:textOff=""
+        android:textOn=""/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="COnnect to device"
+        android:id="@+id/connectDevice"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="Stop Alarm"
+        android:id="@+id/stopAlarm"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>
+</layout>
